@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/***** поле для гри *****/
+/***** поле для гри *****/
+/***** поле для гри *****/
+
+.game-container{
+    background-color: #208efe;
+    height: 100vh;
+    width: 100vw;
+    padding: 1.2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-side, .right-side{
+    background-color: white;
+    height: 100%;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+/***** ліва сторона *****/
+/***** ліва сторона *****/
+/***** ліва сторона *****/
+
+.buttons {
+    min-height: 13.5%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-game {
+    margin-top: 5.5%;
+    width: 40%;
+    background-color: #208efe;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em; 
+}
+
+.img-field {
+    margin: 8% 16%;
+    background-color: #208efe;
+    position: relative;
+    padding: 3%;
+}
+
+.img-field img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 3%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.err-counter p {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em; 
+    color: #208efe;
+}
+
+/***** права сторона *****/
+/***** права сторона *****/
+/***** права сторона *****/
+
+.title-game {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 5%;
+    height: 20%;
+}
+
+.left-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em; 
+    color: #208efe;
+}
+
+.right-title {
+    width: 40%;
+}
+
+.right-title h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em; 
+    color: #208efe;
+    text-align: center;
+}
+
+.btn-dif-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    height: 25%;
+}
+
+.btn-dif-row button {
+    background-color: #208efe;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    padding: 2%;
+    width: 30%;
+}
+
+.word-hint {
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.word-hint h3 {
+    background-color: #208efe;
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 12%;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    padding: 3%;
+    letter-spacing: 2%;
+    margin-bottom: 6%;
+
+}
+.word-hint p {
+    background-color: #208efe;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 12%;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7em;
+    padding: 2%;
+    letter-spacing: 1%;
+    margin-bottom: 5%;
+}
+
+.keyboard {
+    background-color: #208efe;
+    width: 80%;
+    padding: 1.2%;
+    margin: 0 auto;
+    min-height: 30%;
+    position: relative;
+}
+
+.key-table {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2.5%;
+}
+
+.row button {
+    background-color: #208efe;
+    color: #ffffff;
+    height: 5%;
+    width: 10%;
+    padding: 1%;
+    font-size: 0.75em;
+}
+
+.no-disp {
+    background-color: #ffffff;
+    visibility: hidden;
+}
+
+.result-msg {
+    color: #208efe;
+    margin-top: 7%;
+}
+
+.result-msg p {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6em;
+}
+
+/***** адаптив *****/
+/***** адаптив *****/
+/***** адаптив *****/
+
+@media (max-width: 1000px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 700px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.55em;
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.45em;
+    }
+
+    .game-container {
+        background-color: #208efe;
+        padding: 1.2%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .left-side, .right-side {
+        width: auto;
+        display: block;
+    }
+
+    .right-side {
+        margin-top: auto;
+    }
+
+    .game-container{
+        height: 120vh;
+    }
+
+    .img-field{
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .img-field img {
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.3em;
+    }
+
+    .game-container {
+        background-color: #208efe;
+        padding: 1.15%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .left-side, .right-side {
+        width: auto;
+        display: block;
+    }
+
+    .right-side {
+        margin-top: auto;
+    }
+
+    .game-container{
+        height: 125vh;
+    }
+
+    .img-field{
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .img-field img {
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 0.2em;
+    }
+
+    .game-container {
+        background-color: #208efe;
+        padding: 1.15%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .left-side, .right-side {
+        width: auto;
+        display: block;
+    }
+
+    .right-side {
+        margin-top: auto;
+    }
+
+    .game-container{
+        height: 125vh;
+    }
+
+    .img-field{
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .img-field img {
+        height: 52vh;
+        width: 25vw;
+        margin: 0 auto;
+    }
+}
+
+
+/***** Зміни кнопок при натисканні та утриманні *****/
+/***** Візуальне відображення перемоги чи поразки (кольори), картинок *****/
+
+
+
+button:hover, .btn-dif-row button:hover, .row button:hover {
+    background-color: #32cbd6;
+}
+
+.btn-dif-row button.clicked {
+    background-color: #08bf42;
+}
+
+.green {
+    color: #08bf42;
+}
+
+.row button.letter-green {
+    background-color: #08bf42;
+    color: #000;
+}
+
+.red {
+    color: #ff0000;
+}
+
+span.hidden {
+    display: none;
+}

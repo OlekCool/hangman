@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="left-side">
+            <div class="buttons">
+                <button class="btn-game" id="newGame">New game</button>
+                <button class="btn-game" id="finGame">Finish game</button>
+            </div>
+
+            <div class="img-field">
+                <img id="image" alt="stages">
+            </div>
+
+            <div class="err-counter">
+                <p>Made errors: <span id="madeErr"></span> / <span id="maxErr">6</span></p>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="title-game">
+                <div class="left-title">
+                    <p>Wons: <span id="wons"></span></p>
+                    <p>Loses: <span id="loses"></span></p>
+                </div>
+                <div class="right-title">
+                    <h3>HANGMAN GAME</h3>
+                    <div class="btn-dif-row">
+                        <button id="easy">Easy</button>
+                        <button id="medium">Medium</button>
+                        <button id="hard">High</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="word-hint">
+                <h3 id="wordToGuess"></h3>
+                <p id="hintForWord"></p>
+            </div>
+
+            <div class="keyboard">
+                <div class="key-table">
+                    <div class="row">
+                        <button>A</button>
+                        <button>B</button>
+                        <button>C</button>
+                        <button>D</button>
+                        <button>E</button>
+                        <button>F</button>
+                        <button>G</button>
+                    </div>
+
+                    <div class="row">
+                        <button>H</button>
+                        <button>I</button>
+                        <button>J</button>
+                        <button>K</button>
+                        <button>L</button>
+                        <button>M</button>
+                        <button>N</button>
+                    </div>
+
+                    <div class="row">
+                        <button>O</button>
+                        <button>P</button>
+                        <button>Q</button>
+                        <button>R</button>
+                        <button>S</button>
+                        <button>T</button>
+                        <button>U</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="no-disp"></button> <!--FOR CENTERING LAST ROW-->
+                        <button>V</button>
+                        <button>W</button>
+                        <button>X</button>
+                        <button>Y</button>
+                        <button>Z</button>
+                        <button class="no-disp"></button> <!--FOR CENTERING LAST ROW-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-msg">
+                <p>You <span id="res1"> are playing! </span> 
+                       <span id="res2" class="hidden green"> WON! </span> 
+                       <span id="res3" class="hidden red"> LOST! </span> 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
